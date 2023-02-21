@@ -1,0 +1,67 @@
+
+class A{
+
+    public int age;
+    public int num;
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getNum() {
+        return num;
+    }
+
+    public void setNum(int num) {
+        this.num = num;
+    }
+
+}
+class B extends A{
+    public int f;
+    public int g;
+
+    public int getF() {
+        return f;
+    }
+
+    public void setF(int f) {
+        System.out.println("hi man");
+        this.f = f;
+    }
+
+    public int getG() {
+        return g;
+    }
+
+    public void setG(int g) {
+        System.out.println("hello there");
+        this.g = g;
+    }
+}
+
+public class inhertance {
+    public static void main(String[] args) {
+        B har = new B();
+        har.setG(12);
+        har.setF(480);
+        har.setAge(6);
+        har.setAge(456);
+        System.out.println(har.getAge());
+        System.out.println(har.getNum());
+        System.out.println(har.getG());
+        System.out.println(har.getF());
+
+//        B ha = new B();
+//        ha.setF(23);
+//        ha.setG(800);
+//        System.out.println(ha.getF());
+//        System.out.println(ha.getG());
+//
+
+    }
+}
