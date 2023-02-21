@@ -1,0 +1,13 @@
+public class Array {
+    public static  void main(String args[])
+    {
+        System.out.println("this is array program:-");
+        int [] num = {37,23,34,121,2,1,54};
+        System.out.println("string length is :- "+num.length);
+        for (int i = num.length-1; i>=0;i--)
+        {
+            System.out.println(num[i]);
+        }
+
+    }
+}
