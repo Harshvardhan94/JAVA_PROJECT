@@ -1,0 +1,58 @@
+import java.util.Random;
+import java.util.Scanner;
+
+
+class Game {
+    public int inputNumber;
+    public int chacknumber;
+    public int no;
+   public int num;
+
+    public int getNo() {
+        return no;
+    }
+
+    public void setNo(int no) {
+        this.no = no;
+    }
+
+     Game()
+    {
+        Random rand = new Random();
+        this.inputNumber = rand.nextInt(100);
+    }
+
+    void inputthenumber(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Guss the number :-");
+        num = sc.nextInt();
+    }
+    public boolean chack(){
+        no++;
+        if(num==inputNumber)
+        {
+            System.out.println("you correct");
+            System.out.format("you guss the number %d in total %d attempts",inputNumber,no);
+        } else if (num>inputNumber) {
+            System.out.println("Too low.....");
+        } else if (num<inputNumber) {
+            System.out.println("Too high...." +
+                    "");
+        }
+        return false;
+    }
+
+
+}
+public class Gussthe_nomber {
+    public static void main(String[] args) {
+boolean b = false;
+        Game obj = new Game();
+while(!b){
+            obj.inputthenumber();
+            b = obj.chack();
+
+        }
+
+
+    }}
