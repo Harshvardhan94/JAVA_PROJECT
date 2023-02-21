@@ -1,0 +1,47 @@
+
+class cus {
+    private int id;
+    private String name;
+
+    public cus() {
+        id = 45;
+        name = "harsh";
+    }
+    public cus(int i)
+    {
+        i = id;
+        name = null;
+    }
+    public cus(String n,int d)
+    {
+        name = n;
+        id = d;
+    }
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+
+public class Constructer {
+    public static void main(String[] args) {
+        //cus hay = new cus();
+        //cus hay = new cus(45);
+        cus hay = new cus("harshvardhan" ,67);
+        System.out.println(hay.getId());
+        System.out.println(hay.getName());
+    }
+}
