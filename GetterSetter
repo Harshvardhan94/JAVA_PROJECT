@@ -1,0 +1,44 @@
+class newaccess{
+    private int num;
+    private int id;
+    private String name;
+    public int getnum()
+    {
+        return num;
+    }
+    public void setNum(int n)
+    {
+        num = n;
+    }
+    public void setId(int m)
+    {
+        id = m;
+    }
+    public int getId()
+    {
+        return id;
+    }
+    public void setName(String na)
+    {
+        name = na;
+    }
+    public String getName()
+    {
+        return name;
+    }
+
+}
+public class gettersetter {
+
+    public static void main(String[] args) {
+        newaccess hvt = new newaccess();
+        hvt.setNum(400000);
+        hvt.setId(78);
+        hvt.setName("harshvardhan tiwari");
+        System.out.println(hvt.getName());
+        System.out.println(hvt.getId());
+        System.out.println(hvt.getnum());
+
+    }
+
+}
