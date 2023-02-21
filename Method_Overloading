@@ -1,0 +1,34 @@
+class one{
+    public int a;
+    public int reu(){
+        return a;
+    }
+    public boolean dooo()
+    {
+        System.out.println("this is a 1 method of one class");
+        return false;
+    }
+
+}
+class two extends one{
+    public int b;
+    public int ttt()
+    {
+      return b;
+    }
+    public boolean dooo()
+    {
+        System.out.println("this is a 1 method of two class");
+        return false;
+    }
+
+}
+public class methodOverload {
+    public static void main(String[] args) {
+        two h = new two();
+        h.dooo();
+        System.out.println(h.dooo());
+
+
+    }
+}
