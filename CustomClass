@@ -1,0 +1,34 @@
+
+class firstclass{
+    int enroll;
+    int r;
+    String name;
+
+    public void readcoutom(){
+        System.out.println("my id = "+r);
+        System.out.println("my enrollment number is :- "+enroll);
+        System.out.println("my name is :- "+name);
+    }
+}
+
+public class customclass{
+    public static void main(String[] args) {
+        System.out.println("this the first custom class");
+
+        firstclass har = new firstclass();
+        firstclass var = new firstclass();
+        har.enroll = 48;
+        har.r  = 112;
+        har.name = "harshavrdhantiwari";
+        var.enroll = 50;
+        var.r  = 342;
+        var.name = "himanshu";
+
+       // System.out.println(har.enroll);
+        //System.out.println(har.r);
+       // System.out.println(har.name);
+        har.readcoutom();
+        var.readcoutom();
+
+    }
+}
